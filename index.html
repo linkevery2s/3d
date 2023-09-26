@@ -32,23 +32,67 @@
 			grid-template-columns: repeat(3, 1fr);
 		}
 
+		.title{
+			padding: 1em;
+			background: #1e50B5;
+			color: #ffffff;
+			margin: 0 0 1em 0;
+		}
+
+		#contents img{
+			margin-bottom: .5em;
+			border: 1px solid rgba(72, 88, 89, 0.5);
+		}
+
+		#contents{
+			border: 1px solid #485859;
+			border-radius: .5em;
+			box-shadow: 0 10px 25px 0 rgba(72, 88, 89, 0.5);
+
+		}
+
+		#contents:hover {
+			background: rgba(30, 80, 181, 0.1);
+
+		}
+
 	</style>
 
 </head>
 
-<body class="p-5">
+<body>
 
-	<h1 class="text-3xl mb-5">3D データセット</h1>
+	<center>
 
-	<div class="wrapper px-5 mb-10">
-		<div class="px-1 mb-1">
+		<div class="title">
+			<h1 class="text-3xl">3D データセット</h1>
+		</div>
 
-			<a href="./data/bench/index.html"><img src="images/bench.jpg" alt="ベンチ"></a>
+		<div class="wrapper px-1 md:px-5">
+			<div class="pt-2 px-1 md:px-5 mx-1 mb-1 text-left" id="contents">
+
+				<a href="./data/bench/"><img src="images/bench.jpg" alt="ベンチ"></a>
+				fff
+
+			</div>
+
+			<div class="pt-2 px-1 md:px-5 mx-1 mb-1 text-left" id="contents">
+
+				<a href="./data/covid19/"><img src="images/covid19.jpg" alt="covid19"></a>
+
+			</div>
+
+			<div class="pt-2 px-1 md:px-5 mx-1 mb-1 text-left" id="contents">
+
+				<a href="./data/bench/"><img src="images/bench.jpg" alt="ベンチ"></a>
+
+			</div>
+
 
 		</div>
 
-	</div>
 
+	</center>
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
