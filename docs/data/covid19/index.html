@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset='UTF-8' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+  <script src="./jmol/jsmol/JSmol.min.js"></script>
+  <script src="./jmol/jsmol/js/Jmol2.js"></script>
+  <script>
+    jmolInitialize("./jmol/jsmol");
+  </script>
+
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+
+    a {
+      text-decoration: none !important;
+      border-bottom: #1e50a2 dotted 1px;
+      color: #1e50a2 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+
+    jmolApplet("100%", "load pdb6lu7.ent; cartoon only; color cartoon structure;'", "0");
+    jmolCheckbox("spin on", "spin off", '回転');
+
+  </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MPP84V2NHB');
+    </script>
+</body>
+
+</html>
